@@ -7,6 +7,7 @@ on:
         required: true
         type: environment
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - run: echo "Deploying to ${{ github.event.inputs.environment }} environment."
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ github.event.inputs.environment }} environment."
